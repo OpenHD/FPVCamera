@@ -21,7 +21,7 @@ To provide a good user experience, an Ideal OpenHD FPV Camera must fulfill the f
    - Configure the stream such that the decoder knows that no picture re-ordering is possible. The easiest way to achieve this would be to set pic_order_cnt_type to 2
    
 ### 4. Resolution / Framerate requirements:
-To be usable for FPV, the minimum requirements for a live FPV feed are 720p60fps. More combinations like 1080p60 or 720p120 would be nice.
+To be usable for FPV, the minimum requirements for a live FPV feed are 720p60fps. More expensive configurations like 1080p60 or 720p120 would be nice.
 
 ### 4. Size requirements:
 The whole unit (image sensor and encoder) shall be as light and small as possible since it is always mounted on an aircraft or "drone"
