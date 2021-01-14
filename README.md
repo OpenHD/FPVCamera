@@ -5,6 +5,7 @@ Describe the Specifications for an ideal digital FPV Camera compatible with Open
 In this context, a digital FPV Camera is a digital camera sensor (for example IMX219 ) paired with a h264/h265 encoder chip that connects via USB to linux and provides a live h264/h265 (digital) stream via the USB interface.
 You could also refer to this as an IP Camera / Webcam with integrated encoder.
 Other than providing a live video stream via USB, an ideal FPV Camera also provides an interface to change parameters like framerate, resolution, white balance via USB.
+[Example](https://shop.runcam.com/runcam-webcam/)
 
 # 2. Why not use the RPI encoder and a camera that connects via CSI instead of USB (like Pi Cam V2)
 Having the encoder as close to the camera sensor as possible has the following advantages for our use case:
