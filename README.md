@@ -11,17 +11,17 @@ Having the encoder as close to the camera sensor as possible has the following a
 a) The stream is compressed as soon as possible and not transfered over a high bitrate interface (CSI interface), which reduces emission of interfering RF signals 
 b) The CSI connector is fragile and limits the possibilities for placing the camera inside your RC model aircraft
 
-3) Latency requirements:
+3) Latency requirements:\
 To provide a good user experience, an Ideal OpenHD FPV Camera must fulfill the following requirements:
 a) Encode the raw image sensor data as quick as possible with h264/h265 and forward the h264/h265 NALUs via USB without any buffering
 b) Use h264/h265 encoding parameters that not only allow the stream to be encoded quickly by the encoder HW, but also allow it to be decoded quickly and without any buffering. As a quideline, the minimum requirements would be:
   1) Configure the stream such that the encoder only produces I or P frames, ideally only I frames. The easiest way to achieve this would be to use the h264 "Baseline" profile
   2) Configure the stream such that the decoder knows that no picture re-ordering is possible. The easiest way to achieve this would be to set pic_order_cnt_type to 2
 
-4) Size requirements:
+4) Size requirements:\
 The whole unit (image sensor and encoder) shall be as light and small as possible since it is always mounted on an aircraft or "drone"
 
-5) Nice to have:
+5) Nice to have:\
 Using 2 cameras when flying FPV is pretty common. In this case, one camera provides the low latency live view while the other camera is only used for recording the experience.
 However, most modern SOCs used for action cameras or similar can encode the same camera stream twice, once with a smaller bitrate for live preview and once with a higher bitrate for storage. Such a solution might be favorable for the vast majority of users and would justify a higher price.
 
