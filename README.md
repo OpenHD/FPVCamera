@@ -6,7 +6,7 @@ In this context, a digital FPV Camera is a digital camera sensor (for example IM
 You could also refer to this as an IP Camera / Webcam with integrated encoder.
 Other than providing a live video stream via USB, an ideal FPV Camera also provides an interface to change parameters like framerate, resolution, white balance via USB.
 
-2) Why not use the RPI encoder and a camera that connects via CSI instead of USB (like Pi Cam V2)
+2) Why not use the RPI encoder and a camera that connects via CSI instead of USB (like Pi Cam V2)\
 Having the encoder as close to the camera sensor as possible has the following advantages for our use case:
 a) The stream is compressed as soon as possible and not transfered over a high bitrate interface (CSI interface), which reduces emission of interfering RF signals 
 b) The CSI connector is fragile and limits the possibilities for placing the camera inside your RC model aircraft
