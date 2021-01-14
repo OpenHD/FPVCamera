@@ -1,7 +1,7 @@
 # FPVCamera
 Describe the Specifications for an ideal digital FPV Camera compatible with OpenHD
 
-* 1 What is a digital FPV Camera\
+1. What is a digital FPV Camera\
 In this context, a digital FPV Camera is a digital camera sensor (for example IMX219 ) paired with a h264/h265 encoder chip that connects via USB to linux and provides a live h264/h265 (digital) stream via the USB interface.
 You could also refer to this as an IP Camera / Webcam with integrated encoder.
 Other than providing a live video stream via USB, an ideal FPV Camera also provides an interface to change parameters like framerate, resolution, white balance via USB.
