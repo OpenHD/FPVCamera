@@ -24,6 +24,7 @@ To provide a good user experience, an Ideal OpenHD FPV Camera must fulfill the f
 3. As a quideline, the minimum requirements would be:
    - Configure the stream such that the encoder only produces I or P frames, ideally only I frames. The easiest way to achieve this would be to use the h264 "Baseline" profile
    - Configure the stream such that the decoder knows that no picture re-ordering is possible. The easiest way to achieve this would be to set pic_order_cnt_type to 2
+   - Configure the encoder such that the encoding time is not more than 20ms, ideally lower for both 720p60 / 1080p60
    
 ### 4. Resolution / Framerate requirements:
 To be usable for FPV, the minimum requirements for a live FPV feed are 720p60fps. More expensive configurations like 1080p60 or 720p120 would be nice.
