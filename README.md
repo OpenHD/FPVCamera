@@ -8,6 +8,7 @@ Other than providing a live video stream via USB, an ideal FPV Camera shall also
 - framerate  (minimum requirement)
 - resolution  (minimum requirement)
 - bitrate (minimum requirement)
+- key frame intervall (minimum requirement)
 - white balance / exposure (nice to have)
 
 
