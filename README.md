@@ -22,9 +22,9 @@ Having the encoder as close to the camera sensor as possible has the following a
 To provide a good user experience, an Ideal OpenHD FPV Camera must fulfill the following requirements:
 1. Encode the raw image sensor data as quick as possible with h264/h265 and forward the h264/h265 NALUs via USB without any buffering
 2. Use h264/h265 encoding parameters that not only allow the stream to be encoded quickly by the encoder HW, but also allow it to be decoded quickly and without any buffering.
-3. As a quideline, the minimum requirements would be:
-   - Configure the stream such that the encoder only produces I or P frames, ideally only I frames. The easiest way to achieve this would be to use the h264 "Baseline" profile
-   - Configure the stream such that the decoder knows that no picture re-ordering is possible. The easiest way to achieve this would be to set pic_order_cnt_type to 2
+3. As a quideline, the minimum requirements are:
+   - Configure the stream such that the encoder only produces I or P frames, ideally only I frames. One way to do this is to use the h264 "Baseline" profile
+   - Configure the stream such that the decoder knows that no picture re-ordering is possible. One way to do this is to set pic_order_cnt_type to 2
    - Configure the encoder such that the encoding time is not more than 20ms, ideally lower for both 720p60 / 1080p60
    
 ### 4. Resolution / Framerate requirements:
