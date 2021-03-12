@@ -16,7 +16,8 @@ Other than providing a live video stream via USB, an ideal FPV Camera shall also
 Having the encoder as close to the camera sensor as possible has the following advantages for our use case:
 1. The stream is compressed as soon as possible and not transfered over a high bitrate interface (CSI interface), which reduces emission of interfering RF signals 
 2. The CSI connector is fragile and limits the possibilities for placing the camera inside your RC model aircraft
-3. The rpi encoder is slow and can barely do 720p 60 (720p 49)
+3. The rpi encoder is slow and can barely do 720p 60 (720p 49). Alternatives to the rpi with a good integrated encoder (like jetson) are generally big and expensive.
+4. But paired with a camera that already encodes the video in h264/5 the rpi CM4 makes a great packet for digital FPV.
 
 ### 3. Latency requirements:
 To provide a good user experience, an Ideal OpenHD FPV Camera must fulfill the following requirements:
